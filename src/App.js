@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import UploadItem from './components/UploadItem';
+import Home from './components/Home';
+import ShowMyItems from './components/ShowMyItems';
+import ShowAllItems from './components/ShowAllItems';
+import Navbar from './components/Navbar';
+import FindItems from './components/FindItems';
 
-function App() {
+export const App = () => {
+  const [uploadedItems, setUploadedItems] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      {/* Your content goes here */}
+      <Navbar/>
+      <Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="/upload" element={<UploadItem  />} />
+  <Route path="/showmine" element={<ShowMyItems />} />
+  <Route path="/showall" element={<ShowAllItems  />} />
+  <Route path="/finditem" element={<FindItems  />} />
+</Routes>
+
+    </Router>
   );
-}
+};
 
 export default App;

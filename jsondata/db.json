@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "productName": "Type-c Charger",
+      "productDescription": "brand new, just off the box",
+      "itemWanted": "HDMI cable",
+      "itemWantedDescription": "can be used - as long as it works!",
+      "email": "hema@gmail.com",
+      "id": 1
+    },
+    {
+      "productName": "2kg dumbell pair",
+      "productDescription": "used, but still usable, no tears",
+      "itemWanted": "pull-up bar",
+      "itemWantedDescription": "the kind that stays on suction only",
+      "email": "tina@gmail.com",
+      "id": 2
+    },
+    {
+      "productName": "Sports cap",
+      "productDescription": "preferably adidas or nike, can be used but should look good",
+      "itemWanted": "Nike socks (original pair)",
+      "itemWantedDescription": "brand new still in packaging",
+      "email": "george@gmail.com",
+      "id": 3
+    }
+  ]
+}
